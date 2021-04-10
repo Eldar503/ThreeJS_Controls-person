@@ -219,9 +219,10 @@ class LoadModelDemo {
     this._scene.background = texture;
 
     const plane = new THREE.Mesh(
-        new THREE.PlaneGeometry(100, 100, 10, 10),
+        new THREE.PlaneGeometry(0),
         new THREE.MeshStandardMaterial({
             color: 0x202020,
+            
           }));
     plane.castShadow = false;
     plane.receiveShadow = true;
